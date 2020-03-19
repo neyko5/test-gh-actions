@@ -12,7 +12,7 @@ jobs:
       steps:
       - uses: actions/checkout@v1
       - name: Run a one-line script
-        run: echo  ${{ github.event.deployment.id }}"
+        run: echo  ${{ github.event.deployment.id }}
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
