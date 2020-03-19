@@ -14,7 +14,7 @@ jobs:
         with:
             ref: ${{ github.event.deployment.sha }}
       - name: Run a one-line script
-        run: echo Deploying ${{ github.event.deployment.ref }} to ${{ github.event.deployment.environment  }}
+        run: echo Deploying ${{ github.event.deployment.ref }} to ${{ github.event.deployment.environment }}
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
