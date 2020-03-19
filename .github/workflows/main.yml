@@ -12,7 +12,7 @@ jobs:
       steps:
       - uses: actions/checkout@v2
         with:
-            ref: ${{ github.event.deployment.ref }}
+            ref: ${{ github.event.deployment.sha }}
       - name: Run a one-line script
         run: echo Deploying ${{ github.event.deployment.ref }} to ${{ github.event.deployment.environment  }}
       - name: Run a multi-line script
