@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "b14177eb-34b4-4be8-ad2d-8524e061d95a",
+		"name": "GH Actions",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GH Create deploy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "token GitHub API token",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ref\": \"8a9e6a8d198d4076fbb2f70e5204d763d6f157bb\",\n    \"environment\": \"teststage\",\n    \"description\": \"Deploy to teststageoo\"\n}"
+				},
+				"url": {
+					"raw": "https://api.github.com/repos/neyko5/test-gh-actions/deployments",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"neyko5",
+						"test-gh-actions",
+						"deployments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
